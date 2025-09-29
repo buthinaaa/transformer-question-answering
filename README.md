@@ -1,7 +1,7 @@
 # 🤖 Transformer-Based Question Answering System
 
 This project implements a **question answering (QA) system** using pre-trained transformer models fine-tuned on the **SQuAD v1.1** dataset. It compares model performance using **Exact Match (EM)** and **F1 score**, logs results with **MLflow**, and provides an interactive **Streamlit demo** for real-time QA.
-> 🚀 Try the live demo on [Streamlit]([https://buthinaaa-detecting-parkinson-s-building-a-diagnosti-app-yhscvj.streamlit.app/](https://transformer-question-answering.streamlit.app/)).
+> 🚀 Try the live demo on [Streamlit](https://transformer-question-answering.streamlit.app/).
 ---
 
 ## 📌 Task Overview

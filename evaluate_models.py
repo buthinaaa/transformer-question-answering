@@ -14,10 +14,9 @@ os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 MODEL_MAP = {
     "BERT": "csarron/bert-base-uncased-squad-v1",
     "DistilBERT": "distilbert-base-uncased-distilled-squad"
-    # BioBERT removed for speed
 }
-DEV_PATH = r"data\raw\dev-v1.1.json"  # Use forward slashes
-SAMPLE_SIZE = 2000  # Set to None for full dev set
+DEV_PATH = r"data\raw\dev-v1.1.json"  
+SAMPLE_SIZE = 2000  
 MLFLOW_EXPERIMENT_NAME = "squad_model_comparison_SAMPLE"
 
 # --- Setup ---
@@ -128,4 +127,4 @@ mlflow.log_figure(fig, "model_comparison.png")
 results_df.to_csv("model_results.csv", index=False)
 mlflow.log_artifact("model_results.csv")
 
-print("\n✅ Evaluation complete! Check MLflow UI for results and graphs.")
+print("\n Evaluation complete! Check MLflow UI for results and graphs.")
